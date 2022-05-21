@@ -1,0 +1,20 @@
+1. Balsamiq 으로 화면 설계 하기
+    st01.포플사이트-화면설계.bmpr 열기
+
+2. 폴더 구조 만들기
+    css, images, js 
+3. index.html에 페이지 뼈대 만들기    
+    <div id="wrap">
+        <header>페이지 공통</header>
+        <nav>페이지 공통</nav>
+        <div id="contents">페이지마다 다름</div>
+        <footer>페이지 공통</footer>
+    </div>
+
+4. index.html이 완성되면 나머지 페이지 만들기
+    index.html
+    login.html
+    register1.html
+    register2.html
+    gallery.html
+

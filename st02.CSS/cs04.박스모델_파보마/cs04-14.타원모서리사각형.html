@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>border radius</title>
+    <style>
+        div {
+            width: 300px;
+            height: 150px;
+            background-color: #ffd800;
+            border: 2px solid black;
+            margin: 20px;
+        }
+        /* <div class="round1"> */
+        div.round1 { 
+            border-top-left-radius: 100px/* x축 */ 50px/* y축 */ ;
+        }
+        /* <div class="round2"> */
+        div.round2 { 
+            border-bottom-right-radius: 50%/*x축*/  30%/* y축*/ ;
+        }
+        /* <div class="round3"> */
+        div.round3 { 
+            border-top-right-radius: 50px /* x축 */ /* y축 생략 : 50px 로 설정 */; /* 50px 50px */
+        }
+    </style>
+</head>
+<body>
+    <div class="round1"></div>
+    <div class="round2"></div>
+    <div class="round3"></div>
+</body>
+</html>
