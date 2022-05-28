@@ -8,16 +8,64 @@
     <style>
         label {width: 100px; display: inline-block; vertical-align:top; }
         div {margin:auto; }
-        .orderinfo {  width: 250px; }
-        input[type='number'] { width:60px; }		
+        .orderinfo {  width: 400px; }
+        input[type='number'] { width:60px; }
 		ul > li { list-style-type:none; }
+        .btn{text-align: center;
+        }
     </style>
 </head>
 <body>
+<fieldset>
+    <legend>개인정보</legend>
+    <div><label>이름</label>
+        <input type="text" value="개인정보" placeholder="개인정보 입력"></div>
+        <div><label>연락처</label>
+    <input type="tel" value="개인정보" placeholder="개인정보 입력"></div>
+
+</fieldset>
+<fieldset>
+    <legend>배송지정보</legend>
+    <div>
+        <label>주소</label>
+        <input type="text" value="">
+    </div>
+    <div>
+        <label>전화번호</label>
+        <input type="tel" value="">
+    </div>
+    <div>
+        <label>메모</label>
+        <input type="textarea" value="">
+    </div>
+</fieldset>
+<fieldset>
+    <legend>주문정보</legend>
+    <div class="orderinfo">
+        <div><label for=""></label>
+            <input type="radio" checked> 과테말라
+            <input type="number" name="" id="">개
+        </div>
+        <div><label for=""></label>
+            <input type="radio" > 인도네시아
+            <input type="number" name="" id="">개
+        </div>
+        <div><label for=""></label>
+            <input type="radio" > 과테말라
+            <input type="number" name="" id="">개
+        </div>
+    </div>
+
+</fieldset>
+    <div class="btn">
+        <input type="submit" name="" id="" value="주문하기">
+        <input type="submit" name="" id="" value="주문하기">
+    </div>
+    <a href="#"></a>
 
 	<pre>
 		작업 순서
-		 개인 정보 
+		 개인 정보
          배송지 정보
 		 주문 정보
 		 주문하기

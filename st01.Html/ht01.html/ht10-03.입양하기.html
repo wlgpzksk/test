@@ -8,11 +8,11 @@
     <style>
         /* 태그 찾기 { 태그 설정 } */
 		/* 1 */
-        header { 
-            height: 70px; 
-            background-color: #F46075; 
+        header {
+            height: 70px;
+            background-color: #F46075;
         }
-			
+
 		/* 2 */
         footer {
             height: 50px;
@@ -23,10 +23,10 @@
         }
 
 		/* 3 */
-        section {	
+        section {
             border:1px solid gray;
         }
-		
+
         h1 { height: 70px;  background-color: #F46075; }
 
         /* id="menu" */
@@ -35,9 +35,12 @@
         }
         /* <li class="item"> */
         .item {
-            display: inline-block; 
+            display: inline-block;
             /* float:left; */
         }
+        .contents{
+            width: 500px;
+        border: 1px solid #000;}
         /* id="pet" */
         #pet {
             border: 1px solid gray;
@@ -52,28 +55,38 @@
     </style>
 </head>
 <body>
-        <h1>입양하기</h1>
+        <header>
+            <h1>입양하기</h1>
+        </header>
 
-        <ul id="menu">
-            <li class="item"><a href="#">애완견 종류</a></li>
-            <li class="item"><a href="#">입양하기</a></li>
-            <li class="item"><a href="#">건강돌보기</a></li>
-            <li class="item"><a href="#">더불어살기</a></li>
-        </ul>
-
-            <h2>강아지 용품 준비하기</h2>
-            <ul>
-                <li>강아지 집 </li>
-                <li>강아지 먹이 </li>
-                <li>밥그릇, 물병 </li>
-                <li>이름표, 목줄</li>
-                <li>장난감, 개껌</li>
-                <li>애견용 간식</li>
-                <li>브러쉬, 빗, 털 제거 롤</li>
-                <li>귀 세정액, 구강스프레이, 기타 영양제 </li>
-                <li>샴푸, 린스, 애견용 타올 </li>
+        <nav id="menu">
+            <ul id="menu">
+                <li class="item"><a href="#">애완견 종류</a></li>
+                <li class="item"><a href="#">입양하기</a></li>
+                <li class="item"><a href="#">건강돌보기</a></li>
+                <li class="item"><a href="#">더불어살기</a></li>
             </ul>
+        </nav>
 
-        <p>Copyright 2012 funnycom</p>
+            <div class="contents">
+                <h2>강아지 용품 준비하기</h2>
+                <ul>
+                    <li>강아지 집 </li>
+                    <li>강아지 먹이 </li>
+                    <li>밥그릇, 물병 </li>
+                    <li>이름표, 목줄</li>
+                    <li>장난감, 개껌</li>
+                    <li>애견용 간식</li>
+                    <li>브러쉬, 빗, 털 제거 롤</li>
+                    <li>귀 세정액, 구강스프레이, 기타 영양제 </li>
+                    <li>샴푸, 린스, 애견용 타올 </li>
+                </ul>
+            </div>
+
+        <footer>
+            <p>Copyright 2012 funnycom
+
+            </p>
+        </footer>
 </body>
 </html>
