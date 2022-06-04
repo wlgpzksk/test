@@ -5,17 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>폰트 CSS 속성</title>
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+
+        #font1{
+            font-family: "serif";
+        }
+        #font2{
+            font-family: "나눔고딕";
+        }
+
+        .size1{
+            font-size: 24px;
+        }
+        .size2{
+            font-size: 32px;
+        }
+        .size3{
+            font-size: 48px;
+        }
+        #font3{
+            font-family: 'Nanum Brush Script';
+        }
+        .no1{font-style: normal;}
+        .no2{font-style: italic;}
+        .no3{font-style: oblique;}
+
+    </style>
 </head>
 <body>
     <pre>
-구글에서 "나눔고딕 폰트" 로 검색로 후 설치 
-구글에서 "웹 무료 폰트" 로 검색 'http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff' 
+구글에서 "나눔고딕 폰트" 로 검색로 후 설치
+구글에서 "웹 무료 폰트" 로 검색 'http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff'
     </pre>
 
     <h2>내부 폰트를 사용하는 텍스트 !!!</h2>
     <p> serif font 적용 전: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
     <p id="font1"> serif font 적용 후: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
-    
+
     <p> 변경전: 나눔고딕 font를 이용하여 폰트를 적용한 텍스트 !!! </p>
     <p id="font2"> 변경후: 나눔고딕 font를 이용하여 폰트를 적용한 텍스트 !!! </p>
     <hr>

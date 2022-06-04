@@ -1,38 +1,103 @@
 <!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>박스모델</title>
-</head>
-<body>
-    <div id="borderstyle">
-        <h2>border style</h2>
-        <div class="box1"> solid  </div>
-        <div class="box2"> dotted </div>
-        <div class="box3"> dashed </div>
-        <div class="box4"> 4면이 다른 border style, solid, dotted, dashed, double</div>
-        <div class="box5"> 4면이 다른 border style, solid, dotted, dashed, double</div>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+            content="ie=edge">
+        <title>박스모델</title>
+        <link rel="stylesheet" href="../reset.css">
+        <style>
+            div>div {
+                width: 200px;
+                height: 100px;
+                margin: 50px;
+                text-align: center;
+                background-color: #fff;
+                display: inline-block;
+                box-sizing: border-box;
+            }
 
-    <div id="bordercolor">
-        <h2>border color</h2>
-        <div class="box1"> </div>
-        <div class="box2"> </div>
-        <div class="box3"> </div>
-        <div class="box4"> </div>
-        <div class="box5"> </div>
-    </div>
+                     #borderstyle .box1 {
+                border: 5px solid #000;
+            }
 
-    <div id="borderwidth">
-        <h2>border width</h2>
-        <div class="box1"> </div>
-        <div class="box2"> </div>
-        <div class="box3"> </div>
-        <div class="box4"> </div>
-        <div class="box5"> </div>
-    </div>
+            #borderstyle .box2 {
+                border: 5px dotted #000;
+                ;
+            }
 
-</body>
-</html>
+            #borderstyle .box3 {
+                border: 5px dashed #000;
+            }
+            #borderstyle .box4 {
+                border: 5px #000;
+                border-style: solid dotted dashed double;
+            }
+            #borderstyle .box5 {
+                border: 5px  #000;
+                border-style: solid dotted dashed double;
+            }
+
+            #bordercolor .box1{
+                border: 5px solid red
+            }
+            #bordercolor .box2{
+                border: 5px solid;
+                border-color: red blue ;
+            }
+            #bordercolor .box3{
+                border: 5px solid red;
+                border-color: red blue ;
+            }
+            #bordercolor .box4{
+                border: 5px solid;
+                border-color: black red blue yellow ;
+            }
+            #bordercolor .box5{
+                border: 5px solid;
+                border-color: black red blue yellow ;
+            }
+
+            #borderwidth .box1{ border: 5px solid #000;}
+            #borderwidth .box2{ border: 5px solid #000;
+            border-top-width: 10px;
+            border-right-width: 20px;
+            border-botton-width: 10px;
+            border-left-width: 20px;}
+            #borderwidth .box3{ border: 5px solid #000;
+            border-width: 10px 20px;}
+            #borderwidth .box4{ border: 5px solid #000; border-width: 10px 20px 30px 40px;}
+            #borderwidth .box5
+
+
+        </style>
+    </head>
+    <body>
+        <div id="borderstyle">
+            <h2>border style</h2>
+            <div class="box1"> solid </div>
+            <div class="box2"> dotted </div>
+            <div class="box3"> dashed </div>
+            <div class="box4"> 4면이 다른 border style, solid, dotted, dashed, double</div>
+            <div class="box5"> 4면이 다른 border style, solid, dotted, dashed, double</div>
+        </div>
+        <div id="bordercolor">
+            <h2>border color</h2>
+            <div class="box1"> </div>
+            <div class="box2"> </div>
+            <div class="box3"> </div>
+            <div class="box4"> </div>
+            <div class="box5"> </div>
+        </div>
+        <div id="borderwidth">
+            <h2>border width</h2>
+            <div class="box1"> </div>
+            <div class="box2"> </div>
+            <div class="box3"> </div>
+            <div class="box4"> </div>
+            <div class="box5"> </div>
+        </div>
+    </body>
+</html>
