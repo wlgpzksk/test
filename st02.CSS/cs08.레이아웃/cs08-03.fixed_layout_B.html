@@ -1,32 +1,64 @@
 <!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>레이아웃 B</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+            content="ie=edge">
+        <title>레이아웃 B</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html {
+                height: 100%;
+            }
 
-<body>
-    <h1>레이아웃 B</h1>
+            body {
+                height: 100%;
+            }
 
-    <div id="wrap">
-        <div id="sidebar">
-            sidebar
+            #wrap {
+                height: 100%;
+                text-align: center;
+                display: flex;
+            }
+
+            #sidebar {
+                background-color: red;
+                position: relative;
+            }
+
+            #header {
+                background-color: green;
+                height: 100px;
+            }
+
+            #content {
+                background-color: purple;
+                height: calc(100% - 200px);
+            }
+
+            #footer {
+                background-color: pink;
+                height: 100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>레이아웃 B</h1>
+        <div id="wrap">
+            <div id="sidebar"> sidebar </div>
+
+            <div id="wrappbody">
+                <div id="header"> header </div>
+                <div id="content"> content </div>
+                <div id="footer"> footer </div>
+            </div>
         </div>
-
-        <div id="header">
-            header
-        </div>
-
-        <div id="content">
-            content
-        </div>
-
-        <div id="footer">
-            footer
-        </div>
-    </div>
-</body>
-
-</html>
+    </body>
+</html>

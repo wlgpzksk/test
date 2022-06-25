@@ -1,28 +1,110 @@
 <!DOCTYPE HTML>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <div id="wrap">
-        <header class="header">
-            <h1>1-1</h1>
-            <nav>1</nav>            
-        </header>
-        <section class="slider_section">2</section>
-        <section class="gallery_section">3</section>
-        <section class="rankup_section">4</section>
-        <section class="latest_post_section">5</section>
-        <section class="popular_post_section">6</section>
-        <section class="banner_section">
-            <div class="banner_box_01">7-1</div>
-            <div class="banner_box_02">7-2</div>
-        </section>
-        <section class="social_section">8</section>
-        <footer class="footer">9</footer>
-    </div>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+            content="ie=edge">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                color: white;
+            }
+
+           html, body {
+                height: 100%;
+            }
+
+            #wrap {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                margin: auto;
+                height: 100%;
+            }
+
+            .header {
+                min-height: 80px;
+                background-color: #ff6b57;
+                width: 800%;
+            }
+
+            .header>h1 {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #ff6b57;
+
+            }
+
+            .slider_section {
+                width: 50%;
+                background-color: blue;
+                height: calc(50% - 80px);
+            }
+
+            .gallery_section {
+                width: 25%;
+                background-color: red;
+                height: calc(50% - 80px);
+            }
+            .lastest_post_section{
+                width: 30%;
+                background: purple;
+                height: calc(50% - 80px);
+            }
+            .popular_post_section{
+                width: 30%;
+                background-color: yellow;
+                height: calc(50% - 80px);
+            }
+            .banner_section{
+                width: 30%;
+                background-color: aqua;
+                height: calc(50% - 80px);
+            }
+            .banner_box_01{
+                width: 20%;
+                background-color: darkblue;
+                height: calc(50% - 80px);
+            }
+            .banner_box_02{
+                width: 20%;
+                background-color: rebeccapurple;
+                height: calc(50% - 80px);
+            }
+            .social_section{
+                width: 20%;
+                background-color: darkgoldenrod;
+                height: calc(50% - 80px);
+            }
+            .footer{}}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header class="header">
+                <h1>1-1</h1>
+                <nav>1</nav>
+            </header>
+            <section class="slider_section">2</section>
+            <section class="gallery_section">3</section>
+            <section class="rankup_section">4</section>
+            <section class="latest_post_section">5</section>
+            <section class="popular_post_section">6</section>
+            <section class="banner_section">
+                <div class="banner_box_01">7-1</div>
+                <div class="banner_box_02">7-2</div>
+            </section>
+            <section class="social_section">8</section>
+            <footer class="footer">9</footer>
+        </div>
+    </body>
+</html>

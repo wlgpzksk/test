@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>div 안에 div 가운데 정렬</title>
+    <style>
+        * {
+                padding: 0;
+                margin: 0;
+                box-sizing: content-box;
+            }
+            /*table,tr,td에 줄 그리기*/
+            table, tr, td{
+                border: 1px solid #000;
+                border-collapse: collapse;
+            }
+            div{
+                text-align: center;
+            }
+            div.p{
+                width: 400px;
+                height: 200px;
+                border: 1px solid #000;
+            }
+            div.c{
+                width: 200px;
+                height: 400px;
+                border: 1px solid #000;
+            }
+    </style>
 </head>
 <body>
     <h1> 수평 가운데 정렬 </h1>
@@ -26,7 +51,7 @@
         </div>
     </div>
     <hr >
-	
+
     <h2>display:inline-block; </h2>
 	<table>
         <tr>
@@ -44,7 +69,7 @@
         </div>
     </div>
     <hr >
-	
+
     <h2>display: flex; align-items: center; </h2>
 	<table>
         <tr>
@@ -62,7 +87,7 @@
         </div>
     </div>
     <hr >
-	
+
     <h2>display: table, table-cell </h2>
     <div class="outer">
         <div class="inner">
@@ -71,4 +96,4 @@
         </div>
     </div>
 </body>
-</html>
+</html>

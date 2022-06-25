@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-	<title>display flex</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+            content="ie=edge">
+        <title>display flex</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: content-box;
+            }
 
-<body>
-    <div class="div1">
-        <div>div1-1</div>
-        <div>div1-2</div>
-        <div>div1-3</div>
-    </div>
+            html,
+            body {
+                height: 100%;
+            }
 
-    <div class="div2">
-        <div>div2-1</div>
-        <div>div2-2</div>
-        <div>div2-3</div>
-    </div>
-</body>
+            body {
+                display: flex;
+                flex-direction: column;
+                /*자식 태그를 수직으로 배치*/
+            }
+             body>div{
+                flex-shrink: 0;
+             }
+             .div1 { background-color: red;}
+             .div2{background-color: yellow; flex-grow: 1;}
 
-</html>
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <div>div1-1</div>
+            <div>div1-2</div>
+            <div>div1-3</div>
+        </div>
+        <div class="div2">
+            <div>div2-1</div>
+            <div>div2-2</div>
+            <div>div2-3</div>
+        </div>
+    </body>
+</html>

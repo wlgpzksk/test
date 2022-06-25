@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /*>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 100%;
+            height: 100%;
+          }
+          #wrap {
+            width: 100%;
+            height: 100%;
+          }
+          .nav {
+            width: 100%;
+            height: 100px;
+            float: right;
+          }
+          .nav p {
+            float: left;
+            width: 120px;
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px;
+          }
+          .gnb {
+            display: flex;
+            height: 60px;
+            margin-top: 15px;
+          }
+
+          .gnb button {
+            width: 80px;
+            height: 24px;
+            margin: 5px;
+            padding: 5px 20px;
+            line-height: 12px;
+          }
+          input {
+            width: 160px;
+            height: 20px;
+            margin: 15px;
+          }
+          .nav::after {
+            clear: both;
+            display: block;
+            content: "";
+          }
+     */
+
+      * {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        box-sizing: content-box;
+      }
+
+      html {
+        height: 100%; /* y축으로 꽉찬 화면 */
+      }
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      #wrap {
+        font-family: "맑은 고딕";
+        color: #ffffff;
+        background-image: url(./images/bg0.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-width: 100%;
+        min-height: 100%;
+      }
+      .pull-left {
+        float: left;
+      }
+      .pull_right {
+        float: right;
+      }
+      header::after {
+        clear: both;
+        display: block;
+        content: "";
+      }
+      nav {
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #000;
+        background-color: #fff;
+      }
+      ul > li {
+        padding: 0;
+        margin: 0 20px;
+        display: inline-block;
+      }
+      .pull_right {
+        display: flex;
+        margin-top: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      ul > li {
+        float: left;
+        position: relative;
+      }
+
+      button {
+        width: 50px;
+        height: 20px;
+        margin: 5px;
+      }
+      .input-search {
+        height: 20px;
+      }
+      .input-search-submit {
+        height: 20px;
+      }
+      form {
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="pull-left">
+          <img src="#" alt="logo" />
+          <p>회사명</p>
+        </div>
+
+        <div class="pull_right">
+          <a href="./index.html"><button>home</button></a>
+          <a href="./index.html"><button>login</button></a>
+          <a href="./index.html"><button>joinus</button></a>
+          <form>
+            <input type="text" class="input-search" />
+            <input type="submit" class="input-search-submit" value="검색" />
+          </form>
+        </div>
+      </header>
+
+      <nav id="nav">
+        <ul>
+          <li>
+            <ul>
+              <li>01</li>
+              <li>02</li>
+              <li>03</li>
+              <li>04</li>
+            </ul>
+          </li>
+          <li><a href="#">gallery</a></li>
+          <li><a href="#">office</a></li>
+          <li><a href="#">service</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="main_img"></div>
+    </div>
+  </body>
+</html>

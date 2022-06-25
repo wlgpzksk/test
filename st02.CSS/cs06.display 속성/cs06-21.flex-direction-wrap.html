@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+         * {
+                padding: 0;
+                margin: 0;
+                box-sizing: content-box;
+            }
+
+            div>div{
+                border: 1px solid #000;
+                background-color: gray;
+            }
+            #dir-row{
+                display: flex;
+            }
+            #dir-row > div {
+                width: 33%;
+                height: 300px;
+            }
+            #dir-col{
+                display: flex;
+                flex-direction: column;
+            }
+            #dir-col>div{
+                width: 33%;
+                height: 300px;
+            }
+            #wrap-row{
+                display: flex;
+            }
+
+            #wrap-row>div{
+                width: 40%;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            #wrap-row>div
+    </style>
 </head>
 <body>
     <div id="dir-row">
@@ -38,4 +75,4 @@
     </div>
 
 </body>
-</html>
+</html>
